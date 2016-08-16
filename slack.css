@@ -191,3 +191,13 @@ body,
   border-radius: 0;
   box-shadow: none;
 }
+
+/* add file button */
+#primary_file_button:hover {
+  background: #528bff;
+  border-color: #528bff;
+}
+
+#messages-input-container.focus #primary_file_button:not(:hover) {
+  border-color: #528bff;
+}
