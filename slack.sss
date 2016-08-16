@@ -5,6 +5,8 @@ $ui-blue: rgb(82, 139, 255)
 $gray: rgb(33, 37, 43)
 $black: rgb(24, 26, 31)
 $orange: rgb(209, 154, 102)
+$green: rgb(152, 195, 121)
+$blue: rgb(97, 175, 239)
 
 // layout tweaks
 .ts_icon:before, ts-icon:before
@@ -20,7 +22,7 @@ $orange: rgb(209, 154, 102)
     -webkit-font-smoothing: initial
 
 a, a:link, a:visited
-  color: $ui-blue
+  color: $blue
 
 pre
   font: 400 0.875rem/1.75 Menlo !important
@@ -41,22 +43,18 @@ pre
   background: $gray
   border-top: 1px solid $black
 
-
 // message container
 .day_container
   bottom: 1rem
 
-
 // new messages
-#msgs_div .unread_divider .divider_label
-  color: $ui-green
-  background: rgb(40, 44, 52)
+#msgs_div .unread_divider
+  .divider_label
+    color: $green
+    background: rgb(40, 44, 52)
 
-
-#msgs_div .unread_divider hr,
-#msgs_div .unread_divider.no_unreads hr
-  border-top-color: $ui-green
-
+  &.no_unreads hr, hr
+    border-top-color: $ui-green
 
 // search box at top
 #client_header .channel_header #search_container .search_form:hover .search_input
@@ -92,7 +90,7 @@ pre
 // message
 .light_theme ts-message .message_content .member
   //color: $ui-blue !important
-  color: $ui-green !important
+  color: $green !important
 
 
 ts-message .timestamp
@@ -115,7 +113,6 @@ ts-message .action_hover_container a:last-child
 
 ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight)
   background: rgb(44, 50, 60)
-
 
 body,
 #col_channels,
@@ -189,3 +186,16 @@ body,
 
 .member_image
   border-radius: 50%
+
+
+
+
+
+
+// filename link
+.meta.msg_inline_file_preview_toggler .msg_inline_file_preview_title
+  color: $blue
+
+.file_container.image_container .image_bg
+  border-radius: 0
+  box-shadow: none

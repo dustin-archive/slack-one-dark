@@ -15,7 +15,7 @@
 }
 
 a, a:link, a:visited {
-  color: #528bff;
+  color: #61afef;
 }
 
 pre {
@@ -45,12 +45,10 @@ pre {
 
 /* new messages */
 #msgs_div .unread_divider .divider_label {
-  color: #73c990;
+  color: #98c379;
   background: #282c34;
 }
-
-#msgs_div .unread_divider hr,
-#msgs_div .unread_divider.no_unreads hr {
+#msgs_div .unread_divider.no_unreads hr, #msgs_div .unread_divider hr {
   border-top-color: #73c990;
 }
 
@@ -88,7 +86,7 @@ pre {
 /* message */
 .light_theme ts-message .message_content .member {
   /*color: $ui-blue !important */
-  color: #73c990 !important;
+  color: #98c379 !important;
 }
 
 ts-message .timestamp
@@ -182,4 +180,14 @@ body,
 
 .member_image {
   border-radius: 50%;
+}
+
+/* filename link */
+.meta.msg_inline_file_preview_toggler .msg_inline_file_preview_title {
+  color: #61afef;
+}
+
+.file_container.image_container .image_bg {
+  border-radius: 0;
+  box-shadow: none;
 }
