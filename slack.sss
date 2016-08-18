@@ -12,6 +12,10 @@ $blue: rgb(97, 175, 239)
 .ts_icon:before, ts-icon:before
   font-size: 1rem
 
+// disable bots like RightGIF
+.bot_message
+  display: none
+
 #client-ui *
   font-weight: 300
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
@@ -53,8 +57,15 @@ pre
     color: $green
     background: rgb(40, 44, 52)
 
-  &.no_unreads hr, hr
+  hr
     border-top-color: $ui-green
+
+  &.no_unreads
+    hr
+      border-top-color: $ui-green
+
+    .divider_label
+      color: $green
 
 // search box at top
 #client_header .channel_header #search_container .search_form:hover .search_input
@@ -208,3 +219,7 @@ body,
 
 #messages-input-container.focus #primary_file_button:not(:hover)
   border-color: $ui-blue
+
+
+.tooltip-inner
+  background: $ui-blue

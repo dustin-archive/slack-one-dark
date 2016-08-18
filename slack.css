@@ -3,6 +3,11 @@
   font-size: 1rem;
 }
 
+/* disable bots like RightGIF */
+.bot_message {
+  display: none;
+}
+
 #client-ui * {
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -48,8 +53,14 @@ pre {
   color: #98c379;
   background: #282c34;
 }
-#msgs_div .unread_divider.no_unreads hr, #msgs_div .unread_divider hr {
+#msgs_div .unread_divider hr {
   border-top-color: #73c990;
+}
+#msgs_div .unread_divider.no_unreads hr {
+  border-top-color: #73c990;
+}
+#msgs_div .unread_divider.no_unreads .divider_label {
+  color: #98c379;
 }
 
 /* search box at top */
@@ -200,4 +211,8 @@ body,
 
 #messages-input-container.focus #primary_file_button:not(:hover) {
   border-color: #528bff;
+}
+
+.tooltip-inner {
+  background: #528bff;
 }
