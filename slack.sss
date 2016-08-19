@@ -1,9 +1,13 @@
+$ui-white: rgb(157, 165, 180)
 $ui-yellow: rgb(226, 192, 141)
 $ui-green: rgb(115, 201, 144)
 $ui-blue: rgb(82, 139, 255)
 
+$gray-light: rgb(40, 44, 52)
 $gray: rgb(33, 37, 43)
 $black: rgb(24, 26, 31)
+
+$white: rgb(171, 178, 192)
 $orange: rgb(209, 154, 102)
 $green: rgb(152, 195, 121)
 $blue: rgb(97, 175, 239)
@@ -30,7 +34,7 @@ a, a:link, a:visited
 
 pre
   font: 400 0.875rem/1.75 Menlo !important
-  color: rgb(157, 165, 180)
+  color: $ui-white
   border: 1px solid $black
   background: $gray
 
@@ -55,7 +59,7 @@ pre
 #msgs_div .unread_divider
   .divider_label
     color: $green
-    background: rgb(40, 44, 52)
+    background: $gray-light
 
   hr
     border-top-color: $ui-green
@@ -223,3 +227,10 @@ body,
 
 .tooltip-inner
   background: $ui-blue
+
+
+
+// day divider
+.day_divider .day_divider_label
+  color: $white
+  background: $gray-light

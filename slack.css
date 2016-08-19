@@ -216,3 +216,9 @@ body,
 .tooltip-inner {
   background: #528bff;
 }
+
+/* day divider */
+.day_divider .day_divider_label {
+  color: #abb2c0;
+  background: #282c34;
+}
