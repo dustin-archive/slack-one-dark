@@ -5,7 +5,11 @@
 
 /* disable bots like RightGIF */
 .bot_message {
-  display: none;
+  /* display: none */
+}
+
+.feature_fix_files:not(.first) {
+  /* display: none */
 }
 
 #client-ui * {
@@ -221,4 +225,24 @@ body,
 .day_divider .day_divider_label {
   color: #abb2c0;
   background: #282c34;
+}
+
+code {
+  display: inline-block;
+  padding: 0 4px;
+  font-size: inherit;
+  line-height: inherit;
+  color: #9da5b4;
+  background: #1b1d23;
+  border-color: #181a1f;
+}
+
+/* edited messages */
+ts-message .edited {
+  display: none;
+}
+
+/* message day border */
+.day_container .day_msgs {
+  border-color: #181a1f;
 }

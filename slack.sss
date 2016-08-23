@@ -18,7 +18,10 @@ $blue: rgb(97, 175, 239)
 
 // disable bots like RightGIF
 .bot_message
-  display: none
+  // display: none
+
+.feature_fix_files:not(.first)
+  // display: none
 
 #client-ui *
   font-weight: 300
@@ -234,3 +237,26 @@ body,
 .day_divider .day_divider_label
   color: $white
   background: $gray-light
+
+
+
+code
+  display: inline-block
+  padding: 0 4px
+  font-size: inherit
+  line-height: inherit
+  color: rgb(157, 165, 180)
+  background: rgb(27, 29, 35)
+  border-color: $black
+
+
+
+// edited messages
+ts-message .edited
+  display: none
+
+
+
+// message day border
+.day_container .day_msgs
+  border-color: $black
