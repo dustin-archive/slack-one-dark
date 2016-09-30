@@ -246,3 +246,8 @@ ts-message .edited {
 .day_container .day_msgs {
   border-color: #181a1f;
 }
+
+/* new */
+#channel_header_info, .channel_title_info, .flex_header {
+  background: initial !important;
+}
