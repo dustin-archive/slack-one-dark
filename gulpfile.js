@@ -1,7 +1,5 @@
-'use strict'
-
 const gulp = require('gulp')
-  const sass = require('gulp-ruby-sass')
+  const sass = require('gulp-sass')
   const postcss = require('gulp-postcss')
     const sugarss = require('sugarss')
     const autoprefixer = require('autoprefixer')
@@ -15,7 +13,8 @@ gulp.task('sss', () => {
 })
 
 gulp.task('scss', ['sss'], () => {
-  return sass('slack.scss', { style: 'expanded' }).on('error', sass.logError)
+  return gulp.src('slack.scss')
+    .pipe(sass({ style: 'expanded' }).on('error', sass.logError))
     .pipe(postcss([ autoprefixer ]))
     .pipe(gulp.dest(''))
 })

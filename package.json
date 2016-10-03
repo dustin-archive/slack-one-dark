@@ -7,12 +7,12 @@
     "test": "test"
   },
   "devDependencies": {
-    "autoprefixer": "^6.4.0",
+    "autoprefixer": "^6.5.0",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^6.1.1",
+    "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.1.0",
-    "sugarss": "^0.1.5"
+    "gulp-sass": "^2.3.2",
+    "sugarss": "^0.1.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

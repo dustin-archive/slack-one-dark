@@ -12,6 +12,10 @@ $orange: rgb(209, 154, 102)
 $green: rgb(152, 195, 121)
 $blue: rgb(97, 175, 239)
 
+@import 'avatar'
+@import 'header'
+@import 'treeview'
+
 // layout tweaks
 .ts_icon:before, ts-icon:before
   font-size: 1rem
@@ -91,18 +95,6 @@ pre
   //border: 1px solid transparent
   border: none
   box-shadow: inset 0 0 0 2px $ui-blue
-
-
-// header elements with a white background
-#client_header .channel_header
-  #channel_header_info, .channel_title_info, .flex_header
-    background: initial
-
-  .channel_header_icon
-    color: rgb(157, 165, 180) // header icons
-
-  .channel_header_icon.channel_calls_button .call_icon.call_window_offline
-    color: rgba(157, 165, 180, 0.375) // header disabled phone icon // not official atom color
 
 // message
 .light_theme ts-message .message_content .member
@@ -192,17 +184,16 @@ body,
   border-radius: 0
 
 
-.unread .ts_icon_channel_pane_hash::before,
-.unread .channel_name
-  color: $ui-yellow
+//.unread .ts_icon_channel_pane_hash::before,
+//.unread .channel_name
+//  color: $ui-yellow
 
 #channel_scroll_up,
 #channel_scroll_down
   background: $ui-green
 
 
-.member_image
-  border-radius: 50%
+
 
 
 
@@ -267,5 +258,14 @@ ts-message .edited
 
 
 // new
-#channel_header_info, .channel_title_info, .flex_header
-  background: initial !important
+// #channel_header_info, .channel_title_info, .flex_header
+//   background: initial !important
+
+
+
+
+
+
+// active dot
+#presence.active::before
+  color: $ui-green
