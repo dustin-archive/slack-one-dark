@@ -8,8 +8,9 @@
   color: rgba(157, 165, 180, 0.375); }
 
 ts-message {
-  padding: 4px 64px 4px 0;
-  border: initial; }
+  padding: 2px 64px 2px 0;
+  border: initial;
+  font-size: 14px; }
   ts-message .message_gutter {
     top: initial; }
 
