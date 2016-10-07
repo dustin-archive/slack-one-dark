@@ -1,5 +1,24 @@
-ts-message .message_gutter {
-  top: initial; }
+.channel_header {
+  background: initial; }
+
+.channel_header_icon {
+  color: #9da5b4; }
+
+.channel_header_icon.channel_calls_button .call_icon.call_window_offline {
+  color: rgba(157, 165, 180, 0.375); }
+
+ts-message {
+  padding: 4px 64px 4px 0;
+  border: initial; }
+  ts-message .message_gutter {
+    top: initial; }
+
+.light_theme ts-message .message_gutter {
+  width: 64px;
+  padding: 0; }
+
+.light_theme ts-message .message_content {
+  margin-left: 64px; }
 
 .light_theme ts-message.first .message_icon, .light_theme ts-message.selected .message_icon {
   margin: 0;
@@ -9,16 +28,7 @@ ts-message .message_gutter {
   margin-top: 0; }
 
 .member_image {
-  border-radius: 4px; }
-
-.channel_header {
-  background: initial; }
-
-.channel_header_icon {
-  color: #9da5b4; }
-
-.channel_header_icon.channel_calls_button .call_icon.call_window_offline {
-  color: rgba(157, 165, 180, 0.375); }
+  border-radius: 2px; }
 
 .channels_list_holder .li_h2, .channels_list_holder h2 {
   color: #73c990; }

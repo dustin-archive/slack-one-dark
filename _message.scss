@@ -1,0 +1,34 @@
+ts-message {
+  padding: 4px 64px 4px 0;
+  border: initial;
+
+  .message_gutter {
+    top: initial; // align the avatar
+  }
+}
+
+.light_theme ts-message {
+  .message_gutter {
+    width: 64px;
+    padding: 0;
+  }
+
+  .message_content {
+    margin-left: 64px;
+  }
+
+  &.first, &.selected {
+    .message_icon {
+      margin: 0;
+      text-align: center;
+    }
+
+    .message_content {
+      margin-top: 0; // remove random 1px margin
+    }
+  }
+}
+
+.member_image {
+  border-radius: 2px; // round the avatar
+}
