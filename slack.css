@@ -11,8 +11,14 @@ ts-message .message_gutter {
 .member_image {
   border-radius: 4px; }
 
-.channel_header_refactor.channel_header {
+.channel_header {
   background: initial; }
+
+.channel_header_icon {
+  color: #9da5b4; }
+
+.channel_header_icon.channel_calls_button .call_icon.call_window_offline {
+  color: rgba(157, 165, 180, 0.375); }
 
 .channels_list_holder .li_h2, .channels_list_holder h2 {
   color: #73c990; }
