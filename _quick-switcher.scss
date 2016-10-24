@@ -1,0 +1,17 @@
+#quick_switcher_btn {
+  border-color: transparent;
+  background: $gray;
+
+  i {
+    color: rgb(157, 165, 180);
+  }
+
+  &:hover {
+    border-color: transparent;
+    background: rgb(49, 54, 63);
+
+    i {
+      color: rgb(255, 255, 255);
+    }
+  }
+}

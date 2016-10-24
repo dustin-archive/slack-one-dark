@@ -15,6 +15,9 @@ $blue: rgb(97, 175, 239)
 @import 'header'
 @import 'message'
 @import 'treeview'
+@import 'notifications'
+@import 'quick-switcher'
+@import 'message-input'
 
 // layout tweaks
 .ts_icon:before, ts-icon:before
@@ -45,12 +48,10 @@ pre
   border: 1px solid $black
   background: $gray
 
-
 // header border
 #client_body:not(.onboarding)::before
   background: $gray
   border-bottom: 1px solid $black
-
 
 // footer container
 #footer:not(.footer_msg_input)
@@ -101,51 +102,30 @@ pre
   //color: $ui-blue !important
   color: $green !important
 
-
-ts-message .timestamp
-
-
-
 ts-message .action_hover_container
   border: 1px solid $black
 
-
 ts-message .action_hover_container a
   background: rgb(53, 59, 69)
-
 
 ts-message .action_hover_container,
 ts-message .action_hover_container a:first-child,
 ts-message .action_hover_container a:last-child
   border-radius: 0
 
-
 ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight)
   background: rgb(44, 50, 60)
 
 body,
 #col_channels,
-#team_menu,
-#quick_switcher_btn
+#team_menu
   background: $gray
 
-
 #team_menu,
-#quick_switcher_btn
   border-color: transparent
 
-
-#team_menu:hover,
-#quick_switcher_btn:hover
+#team_menu:hover
   background: rgb(49, 54, 63)
-
-
-#quick_switcher_btn > i
-  color: rgb(157, 165, 180)
-
-#quick_switcher_btn:hover > i
-  color: rgb(255, 255, 255)
-
 
 // channel name and prefix
 #channels_scroller.show_which_channel_is_active ul li.active a.channel_name .prefix,
@@ -153,36 +133,18 @@ body,
   color: rgb(255, 255, 255)
   background: rgb(49, 54, 63)
 
-
 #client-ui .msgs_holder
   background: rgb(40, 44, 52)
   border-left: 1px solid $black
   border-right: 1px solid $black
-
-
-// message input
-#primary_file_button,
-#messages-input-container #message-input
-  color: rgb(157, 165, 180)
-  background: rgb(27, 29, 35)
-  border-color: $black
-
-
-#messages-input-container #message-input:focus
-  border-color: $ui-blue
-
-
-
 
 .channels_list_holder ul li a,
 #channel_title,
 .message_content
   color: rgb(157, 165, 180)
 
-
 .channels_list_holder ul li a
   border-radius: 0
-
 
 //.unread .ts_icon_channel_pane_hash::before,
 //.unread .channel_name
@@ -192,14 +154,6 @@ body,
 #channel_scroll_down
   background: $ui-green
 
-
-
-
-
-
-
-
-
 // filename link
 .meta.msg_inline_file_preview_toggler .msg_inline_file_preview_title
   color: $blue
@@ -208,27 +162,13 @@ body,
   border-radius: 0
   box-shadow: none
 
-
-// add file button
-#primary_file_button:hover
-  background: $ui-blue
-  border-color: $ui-blue
-
-#messages-input-container.focus #primary_file_button:not(:hover)
-  border-color: $ui-blue
-
-
 .tooltip-inner
   background: $ui-blue
-
-
 
 // day divider
 .day_divider .day_divider_label
   color: $white
   background: $gray-light
-
-
 
 code
   display: inline-block
@@ -239,32 +179,17 @@ code
   background: rgb(27, 29, 35)
   border-color: $black
 
-
-
 // edited messages
 ts-message .edited
   display: none
-
-
 
 // message day border
 .day_container .day_msgs
   border-color: $black
 
-
-
-
-
-
-
 // new
 // #channel_header_info, .channel_title_info, .flex_header
 //   background: initial !important
-
-
-
-
-
 
 // active dot
 #presence.active::before

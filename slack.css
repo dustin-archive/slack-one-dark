@@ -34,6 +34,39 @@ ts-message {
 .channels_list_holder .li_h2, .channels_list_holder h2 {
   color: #73c990; }
 
+#messages_container.has_top_messages_banner::before {
+  background: none; }
+
+#quick_switcher_btn {
+  border-color: transparent;
+  background: #21252b; }
+  #quick_switcher_btn i {
+    color: #9da5b4; }
+  #quick_switcher_btn:hover {
+    border-color: transparent;
+    background: #31363f; }
+    #quick_switcher_btn:hover i {
+      color: white; }
+
+#primary_file_button, #messages-input-container #message-input {
+  border-color: #181a1f;
+  background: #1b1d23; }
+  #primary_file_button::-webkit-input-placeholder, #messages-input-container #message-input::-webkit-input-placeholder {
+    color: #9da5b4;
+    opacity: 0.75;
+    -webkit-filter: initial;
+    filter: initial; }
+
+#primary_file_button:hover {
+  border-color: #528bff;
+  background: #528bff; }
+
+#messages-input-container.focus #primary_file_button:not(:hover) {
+  border-color: #528bff; }
+
+#messages-input-container #message-input:focus {
+  border-color: #528bff; }
+
 /* layout tweaks */
 .ts_icon:before, ts-icon:before {
   font-size: 1rem; }
@@ -114,7 +147,6 @@ pre {
   /*color: $ui-blue !important */
   color: #98c379 !important; }
 
-ts-message .timestamp
 ts-message .action_hover_container {
   border: 1px solid #181a1f; }
 
@@ -131,23 +163,14 @@ ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight) {
 
 body,
 #col_channels,
-#team_menu,
-#quick_switcher_btn {
+#team_menu {
   background: #21252b; }
 
-#team_menu,
-#quick_switcher_btn {
+#team_menu {
   border-color: transparent; }
 
-#team_menu:hover,
-#quick_switcher_btn:hover {
+#team_menu:hover {
   background: #31363f; }
-
-#quick_switcher_btn > i {
-  color: #9da5b4; }
-
-#quick_switcher_btn:hover > i {
-  color: white; }
 
 /* channel name and prefix */
 #channels_scroller.show_which_channel_is_active ul li.active a.channel_name .prefix,
@@ -159,16 +182,6 @@ body,
   background: #282c34;
   border-left: 1px solid #181a1f;
   border-right: 1px solid #181a1f; }
-
-/* message input */
-#primary_file_button,
-#messages-input-container #message-input {
-  color: #9da5b4;
-  background: #1b1d23;
-  border-color: #181a1f; }
-
-#messages-input-container #message-input:focus {
-  border-color: #528bff; }
 
 .channels_list_holder ul li a,
 #channel_title,
@@ -192,14 +205,6 @@ body,
 .file_container.image_container .image_bg {
   border-radius: 0;
   box-shadow: none; }
-
-/* add file button */
-#primary_file_button:hover {
-  background: #528bff;
-  border-color: #528bff; }
-
-#messages-input-container.focus #primary_file_button:not(:hover) {
-  border-color: #528bff; }
 
 .tooltip-inner {
   background: #528bff; }

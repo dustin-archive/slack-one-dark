@@ -1,0 +1,34 @@
+%message-input {
+  border-color: $black;
+  background: rgb(27, 29, 35);
+
+  &::-webkit-input-placeholder {
+    color: $ui-white; // should fix color in future instead
+    opacity: 0.75; // should fix color in future instead
+    -webkit-filter: initial;
+    filter: initial;
+  }
+}
+
+#primary_file_button {
+  @extend %message-input;
+
+  &:hover {
+    border-color: $ui-blue;
+    background: $ui-blue;
+  }
+}
+
+#messages-input-container {
+  &.focus #primary_file_button:not(:hover) {
+    border-color: $ui-blue;
+  }
+
+  #message-input {
+    @extend %message-input;
+
+    &:focus {
+      border-color: $ui-blue;
+    }
+  }
+}
