@@ -1,3 +1,21 @@
+#client-ui * {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300; }
+  #client-ui *, #client-ui *::before, #client-ui *::after {
+    -webkit-font-feature-settings: 'liga' 0;
+            font-feature-settings: 'liga' 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: initial; }
+
+a, a:link, a:visited {
+  color: #61afef; }
+
+pre {
+  border: 1px solid #181a1f;
+  color: #9da5b4;
+  font: 400 0.875rem/1.75 Menlo !important;
+  background: #21252b; }
+
 .channel_header {
   background: initial; }
 
@@ -78,24 +96,6 @@ ts-message {
 
 .feature_fix_files:not(.first) {
   /* display: none */ }
-
-#client-ui * {
-  font-weight: 300;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
-  #client-ui *, #client-ui *::before, #client-ui *::after {
-    -webkit-font-feature-settings: 'liga' 0;
-            font-feature-settings: 'liga' 0;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: initial; }
-
-a, a:link, a:visited {
-  color: #61afef; }
-
-pre {
-  font: 400 0.875rem/1.75 Menlo !important;
-  color: #9da5b4;
-  border: 1px solid #181a1f;
-  background: #21252b; }
 
 /* header border */
 #client_body:not(.onboarding)::before {

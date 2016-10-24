@@ -12,6 +12,8 @@ $orange: rgb(209, 154, 102)
 $green: rgb(152, 195, 121)
 $blue: rgb(97, 175, 239)
 
+@import 'reset'
+
 @import 'header'
 @import 'message'
 @import 'treeview'
@@ -29,24 +31,6 @@ $blue: rgb(97, 175, 239)
 
 .feature_fix_files:not(.first)
   // display: none
-
-#client-ui *
-  font-weight: 300
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif
-
-  &, &::before, &::after
-    font-feature-settings: 'liga' 0
-    text-rendering: optimizeLegibility
-    -webkit-font-smoothing: initial
-
-a, a:link, a:visited
-  color: $blue
-
-pre
-  font: 400 0.875rem/1.75 Menlo !important
-  color: $ui-white
-  border: 1px solid $black
-  background: $gray
 
 // header border
 #client_body:not(.onboarding)::before
