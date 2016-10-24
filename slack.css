@@ -90,13 +90,6 @@ ts-message {
 .ts_icon:before, ts-icon:before {
   font-size: 1rem; }
 
-/* disable bots like RightGIF */
-.bot_message {
-  /* display: none */ }
-
-.feature_fix_files:not(.first) {
-  /* display: none */ }
-
 /* header border */
 #client_body:not(.onboarding)::before {
   background: #21252b;
@@ -128,24 +121,20 @@ ts-message {
 
 /* search box at top */
 #client_header .channel_header #search_container .search_form:hover .search_input {
-  /*border: 1px solid transparent */
   border: none; }
 
 .search_form .search_input {
   color: #fff;
-  /*border: 1px solid transparent */
   border: none;
   box-shadow: inset 0 0 0 1px #181a1f;
   background: #1b1d23 !important; }
 
 .search_form .search_input:focus {
-  /*border: 1px solid transparent */
   border: none;
   box-shadow: inset 0 0 0 2px #528bff; }
 
 /* message */
 .light_theme ts-message .message_content .member {
-  /*color: $ui-blue !important */
   color: #98c379 !important; }
 
 ts-message .action_hover_container {
@@ -192,9 +181,6 @@ body,
 .channels_list_holder ul li a {
   border-radius: 0; }
 
-/*.unread .ts_icon_channel_pane_hash::before, */
-/*.unread .channel_name */
-/*  color: $ui-yellow */
 #channel_scroll_up,
 #channel_scroll_down {
   background: #73c990; }
@@ -232,9 +218,6 @@ ts-message .edited {
 .day_container .day_msgs {
   border-color: #181a1f; }
 
-/* new */
-/* #channel_header_info, .channel_title_info, .flex_header */
-/*   background: initial !important */
 /* active dot */
 #presence.active::before {
   color: #73c990; }
