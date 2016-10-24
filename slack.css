@@ -50,6 +50,7 @@ ts-message {
 
 #primary_file_button, #messages-input-container #message-input {
   border-color: #181a1f;
+  color: #9da5b4;
   background: #1b1d23; }
   #primary_file_button::-webkit-input-placeholder, #messages-input-container #message-input::-webkit-input-placeholder {
     color: #9da5b4;
