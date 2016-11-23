@@ -1,3 +1,4 @@
+/* $gray-light: rgb(40, 44, 52) */
 #client-ui * {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300; }
@@ -35,6 +36,7 @@ pre {
 ts-message {
   padding: 2px 64px 2px 0;
   border: initial;
+  color: #abb2bf;
   font-size: 14px; }
   ts-message .message_gutter {
     top: initial; }
@@ -177,8 +179,7 @@ body,
   border-right: 1px solid #181a1f; }
 
 .channels_list_holder ul li a,
-#channel_title,
-.message_content {
+#channel_title {
   color: #9da5b4; }
 
 .channels_list_holder ul li a {

@@ -3,7 +3,7 @@ $ui-yellow: rgb(226, 192, 141)
 $ui-green: rgb(115, 201, 144)
 $ui-blue: rgb(82, 139, 255)
 
-$gray-light: rgb(40, 44, 52)
+// $gray-light: rgb(40, 44, 52)
 $gray: rgb(33, 37, 43)
 $black: rgb(24, 26, 31)
 
@@ -13,6 +13,7 @@ $green: rgb(152, 195, 121)
 $blue: rgb(97, 175, 239)
 
 @import 'reset'
+@import 'syntax-colors'
 
 @import 'header'
 @import 'message'
@@ -45,7 +46,7 @@ $blue: rgb(97, 175, 239)
 #msgs_div .unread_divider
   .divider_label
     color: $green
-    background: $gray-light
+    background: $syntax-bg
 
   hr
     border-top-color: $ui-green
@@ -95,8 +96,7 @@ body,
   border-right: 1px solid $black
 
 .channels_list_holder ul li a,
-#channel_title,
-.message_content
+#channel_title
   color: rgb(157, 165, 180)
 
 .channels_list_holder ul li a
@@ -120,7 +120,7 @@ body,
 // day divider
 .day_divider .day_divider_label
   color: $white
-  background: $gray-light
+  background: $syntax-bg
 
 code
   display: inline-block

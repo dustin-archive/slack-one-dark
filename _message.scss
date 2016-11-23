@@ -1,6 +1,7 @@
 ts-message {
   padding: 2px 64px 2px 0;
   border: initial;
+  color: $mono-1;
   font-size: 14px;
 
   .message_gutter {
@@ -8,7 +9,7 @@ ts-message {
   }
 
   &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
-    background: rgb(44, 50, 60)
+    background: $active-line;
   }
 }
 
