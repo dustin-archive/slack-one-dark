@@ -19,3 +19,16 @@ pre {
   font: 400 0.875rem/1.75 Menlo !important;
   background: $gray;
 }
+
+.popover_menu {
+  border: 0;
+  background: initial;
+
+  .arrow, .arrow_shadow {
+    &:after {
+      // 1px bigger to make up for loss of border
+      width: 11px;
+      height: 11px;
+    }
+  }
+}

@@ -16,6 +16,13 @@ pre {
   font: 400 0.875rem/1.75 Menlo !important;
   background: #21252b; }
 
+.popover_menu {
+  border: 0;
+  background: initial; }
+  .popover_menu .arrow:after, .popover_menu .arrow_shadow:after {
+    width: 11px;
+    height: 11px; }
+
 .channel_header {
   background: initial; }
 
