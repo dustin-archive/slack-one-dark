@@ -1,0 +1,14 @@
+.search_form {
+  border: none;
+  background: rgb(27, 29, 35);
+  box-shadow: inset 0 0 0 1px $black;
+
+  .search_input {
+    color: $ui-white;
+    background: none;
+  }
+}
+
+.search_focused .search_form {
+  box-shadow: inset 0 0 0 2px $ui-blue;
+}
