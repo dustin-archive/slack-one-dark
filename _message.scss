@@ -6,6 +6,10 @@ ts-message {
   .message_gutter {
     top: initial; // align the avatar
   }
+
+  &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
+    background: rgb(44, 50, 60)
+  }
 }
 
 .light_theme ts-message {

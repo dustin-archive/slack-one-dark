@@ -31,6 +31,8 @@ ts-message {
   font-size: 14px; }
   ts-message .message_gutter {
     top: initial; }
+  ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
+    background: #2c323c; }
 
 .light_theme ts-message .message_gutter {
   width: 64px;
@@ -147,9 +149,6 @@ ts-message .action_hover_container,
 ts-message .action_hover_container a:first-child,
 ts-message .action_hover_container a:last-child {
   border-radius: 0; }
-
-ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight) {
-  background: #2c323c; }
 
 body,
 #col_channels,
