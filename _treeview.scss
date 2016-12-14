@@ -2,4 +2,47 @@
   .li_h2, h2 {
     color: $ui-green;
   }
+
+  ul li {
+    .channel_name, .im_name {
+      color: $mono-1;
+    }
+  }
 }
+
+body:not(.sorting_mode) {
+  .channels_list_holder {
+    ul li {
+      .channel_name, .im_name {
+        &:hover {
+          background: mix($syntax-bg, $mono-3, 87.5%);
+        }
+      }
+    }
+  }
+}
+
+#channels_scroller.show_which_channel_is_active {
+  ul li.active a.channel_name {
+    color: $mono-1;
+    background: mix($syntax-bg, $mono-3, 75%);
+  }
+}
+
+// trying to remove space between sidebar and chat
+// .channels_list_holder ul {
+//   width: 220px;
+//   max-width: none;
+// }
+
+// removes extra space
+#col_channels #channels_scroller {
+  border: none;
+}
+
+// channel name and prefix
+// #channels_scroller.show_which_channel_is_active ul li.active a.channel_name .prefix,
+// #channels_scroller.show_which_channel_is_active ul li.active a.channel_name {
+//   color: rgb(255, 255, 255);
+//   background: rgb(49, 54, 63)
+// }
